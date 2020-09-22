@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Gentium Basic', serif;
+  background: rgba(90,90,90, .3);
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+header {
+  position: fixed;
+  top:0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #EFEFEF;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+#nav-bar {
+  font-weight: 400;
+}
+
+#nav-bar a:hover {
+  color: red;
+}
+
+.submit-button {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  padding: 5px;
+}
+
+#email {
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#submit {
+  margin: 0 35%;
+}
+
+#header-img {
+}
+
+#form {
+  margin-bottom: 2%;
+}
+
+#form input {
+  text-align: center;
+  justify-content: center;
+}
+
+#features {
+  display: grid;
+  width: 90%;
+  height: auto;
+  grid-template-areas:
+    "pic infoOne"
+    "pictwo infoTwo"
+    "picthree infoThree";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 0;
+}
+
+#feature-pic {
+  grid-area: pic;
+  max-height: 100px;
+  max-width: auto;
+  justify-self: end;
+  margin: 2% 2% 0 0;
+}
+
+#feature-pic2 {
+  grid-area: pictwo;
+  max-height: 100px;
+  max-width: auto;
+  justify-self: end;
+  margin: 2% 2% 0 0;
+}
+
+#feature-pic3 {
+  grid-area: picthree;
+  max-height: 100px;
+  max-width: auto;
+  justify-self: end;
+  margin: 2% 2% 0 0;
+}
+
+#info-one {
+  grid-area: infoOne;
+  justify-self: start;
+  margin: 0 0 0 2%;
+}
+
+#info-two {
+  grid-area: infoTwo;
+  justify-self: start;
+  margin: 0 0 0 2%;
+}
+
+#info-three {
+  grid-area: infoThree;
+  justify-self: start;
+  margin: 0 0 0 2%;
+}
+
+#video-frame {
+  text-align: center;
+}
+
+#pricing {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.package-option {
+  margin: 5px;
+  background: rgba(80,80,80,.3);
+  min-width: 150px;
+  max-width: 200px;
+  flex-grow: 1;
+}
+
+.package-header{
+  margin: 0 auto;
+  background: grey;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.package-cost {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0;
+}
+
+.package-select {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}

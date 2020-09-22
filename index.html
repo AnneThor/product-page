@@ -1,0 +1,136 @@
+<!Doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="ProductPage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <title>Anne's Product Page</title>
+
+  <main id="page-wrapper">
+
+  <header id="header">
+    <div class="logo">
+      <img src="./ProductPageImages/original_trombones.png"
+           id="header-img"
+           alt="original trombones logo"/>
+    </div>
+
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <div class="container">
+  <section id="hero">
+    <h2>Handcrafted, home-made masterpieces</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email"
+               name="email"
+               id="email"
+               placeholder="Enter your email address"
+               required
+               />
+        <input  type="submit"
+                id="submit"
+                value="Submit"
+                class="submit-button">
+        </input>
+      </form>
+    </section>
+  </div>
+
+  <div class="container">
+  <section id="features">
+    <img id="feature-pic" src="./ProductPageImages/bullet.png" alt="bullet drawing"/>
+    <div id="info-one">
+      <h2>Premium Materials</h2>
+      <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    </div>
+    <img id="feature-pic2" src="./ProductPageImages/bullet.png" alt="bullet drawing"/>
+    <div id="info-two">
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </div>
+    <img id="feature-pic3" src="./ProductPageImages/bullet.png" alt="bullet drawing"/>
+    <div id="info-three">
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
+  </section>
+  </div>
+
+  <section id="video-frame">
+    <iframe id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen> </iframe>
+  </section>
+
+  <section id="pricing">
+    
+    <div class="package-option">
+      <h3 class="package-header"> Tenor Trombone</h3>
+      <p class="package-cost">$600</p>
+      <ul class="inclusions">
+        <li>Setup</li>
+        <li>Intonation</li>
+        <li>Adjustments</li>
+        <li>Polish</li>
+      </ul>
+      <div class="package-select">
+        <button class="submit-button">Select</button>
+      </div>
+    </div>
+
+    <div class="package-option">
+      <h3 class="package-header">Bass Trombone</h3>
+      <p class="package-cost">$900</p>
+      <ul class="inclusions">
+        <li>Setup</li>
+        <li>Intonation</li>
+        <li>Adjustments</li>
+        <li>Polish</li>
+      </ul>
+      <div class="package-select">
+        <button class="submit-button">Select</button>
+      </div>
+    </div>
+    <div class="package-option">
+      <h3 class="package-header">Valve Trombone</h3>
+      <p class="package-cost">$1200</p>
+      <ul class="inclusions">
+        <li>Setup</li>
+        <li>Intonation</li>
+        <li>Adjustments</li>
+        <li>Polish</li>
+      </ul>
+      <div class="package-select">
+        <button class="submit-button">Select</button>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <ul>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <span>Copyright 2020, Original Trombones</span>
+</footer>
+
+</main>
+</body>
+
+</html>
